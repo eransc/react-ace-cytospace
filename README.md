@@ -1,5 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Project Name
+EditorCytoscapce
+
+This is an example on how to cobmine 
+Ace Editor to control cytoscape Graph - React App
+
+## Project Status
+This project is currently in development. Users can modify nodes and edges in the editor and see visual graph representation. Other development is still in progress.
+
 ## Available Scripts
 
 In the project directory, you can run:
