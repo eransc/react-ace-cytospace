@@ -1,9 +1,8 @@
-import React, { useState, useReducer, useEffect } from "react";
+import React from "react";
 import { render } from "react-dom";
 import { useDispatch, useSelector } from "react-redux";
-import _ from "lodash";
 
-import { setGraph, deleteEdge } from "./store/actions";
+import { setGraph, deleteEdge } from "../../store/actions";
 
 import AceEditor from "react-ace";
 
@@ -96,11 +95,12 @@ const CustomEditor = () => {
         theme="github"
         onChange={onChange}
         value={JSON.stringify(state, null, "\t")}
-        name="UNIQUE_ID_OF_DIV"
+        name="aceEditor"
         editorProps={{
           $blockScrolling: true,
           wrap: true,
         }}
+        data-testid="ace-editor"
       />
     </>
   );

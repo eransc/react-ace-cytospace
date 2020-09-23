@@ -1,13 +1,29 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Project Name
+
 EditorCytoscapce
 
-This is an example on how to cobmine 
+This is an example on how to cobmine
 Ace Editor to control cytoscape Graph - React App
 
 ## Project Status
+
 This project is currently in development. Users can modify nodes and edges in the editor and see visual graph representation. Other development is still in progress.
+
+## Use Cases
+
+Adding ...
+can copy paste node at the end of the nodes collection (change id and label)
+can copy paste edge at the end of the edges collection (change target and source)
+
+Deleting ...
+first delete the edges just after the node connected to them
+node lables can be changed
+
+
+TODO
+currently no catching errors like when putting edge data in nodes collection
 
 ## Available Scripts
 
