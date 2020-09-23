@@ -2,8 +2,8 @@ import React from "react";
 
 import "./App.css";
 
-import CustomEditor from "./CustomEditor";
-import CustomGraph from "./CustomGraph";
+import CustomEditor from "./components/CustomEditor/CustomEditor";
+import CustomGraph from "./components/CustomGraph/CustomGraph";
 import Header from "./components/Header/Header";
 
 function App() {
