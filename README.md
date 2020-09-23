@@ -13,13 +13,13 @@ This project is currently in development. Users can modify nodes and edges in th
 
 ## Use Cases
 
-Adding ...
-can copy paste node at the end of the nodes collection (change id and label)
-can copy paste edge at the end of the edges collection (change target and source)
+Adding ...  
+can copy paste node at the end of the nodes collection (change id and label)  
+can copy paste edge at the end of the edges collection (change target and source)  
 
-Deleting ...
-first delete the edges just after the node connected to them
-node lables can be changed
+Deleting ...  
+first delete the edges just after the node connected to them  
+node lables can be changed  
 
 
 TODO
