@@ -78,12 +78,33 @@ const CustomEditor = () => {
     return true;
   }
 
+  function getGraphData(newChange) {
+    // check that edge references to node keys are valid
+    // if one of the node keys in the edge are wrong return false
+    for (let idx = 0; idx < newChange.graph.edges.length; idx++) {
+      const edge = newChange.graph.edges[idx];
+      const result =
+        state.graph.nodes.find((x) => x.data.id === edge.data.source) &&
+        state.graph.nodes.find((x) => x.data.id === edge.data.target);
+      if (!result) {
+        debugger;
+        dispatch(deleteEdge(edge));
+        //return false;
+      }
+    }
+  }
+
   function onChange(newValue) {
     try {
       const newChange = JSON.parse(newValue);
-      if (validateEdges(newChange) && validateNodes(newChange)) {
-        dispatch(setGraph(JSON.parse(newValue)));
-      }
+      // if (validateEdges(newChange) && validateNodes(newChange)) {
+      //   dispatch(setGraph(JSON.parse(newValue)));
+      // }
+
+      //getGraphData(newChange);
+      
+
+
     } catch (ex) {
       console.error("error", ex);
     }

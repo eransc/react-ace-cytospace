@@ -4,12 +4,12 @@ import "./App.css";
 
 import CustomEditor from "./CustomEditor";
 import CustomGraph from "./CustomGraph";
-import Header from "./Header";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
     <>
-      <Header />
+      <Header text="Graph Editor"/>
       <div className="App">
         <CustomEditor />
         <CustomGraph />

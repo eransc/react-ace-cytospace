@@ -24,7 +24,6 @@ const CustomGraph = () => {
       cy={(cy) => {
         cy = cy;
         cy.on("add", "node", (_evt) => {
-          console.log("adding node");
           cy.layout(layout).run();
           cy.fit();
         });

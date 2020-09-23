@@ -1,30 +1,4 @@
-const initialState = {
-  graph: {
-    nodes: [
-      { data: { id: "one", label: "Node 1" }, position: { x: 0, y: 0 } },
-      { data: { id: "two", label: "Node 2" }, position: { x: 100, y: 0 } },
-      { data: { id: "three", label: "Node 3" }, position: { x: 100, y: 100 } },
-      { data: { id: "4", label: "Node 4" }, position: { x: 100, y: 200 } },
-      { data: { id: "5", label: "Node 5" }, position: { x: 100, y: 300 } },
-    ],
-    edges: [
-      {
-        data: {
-          source: "one",
-          target: "two",
-          label: "Edge from Node1 to Node2",
-        },
-      },
-      {
-        data: {
-          source: "one",
-          target: "three",
-          label: "Edge from Node1 to Node3",
-        },
-      },
-    ],
-  },
-};
+import initialState from "./data.json"
 
 export const rootReducer = (state = initialState, action) => {
   switch (action.type) {
